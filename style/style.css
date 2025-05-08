@@ -1,0 +1,107 @@
+/* create root */
+:root{
+    --titleFond:Titillium Web;
+    --textFond:Montserrat;
+    --titleColor:#000000;
+    --textColor:#858585;
+    --menuColor:#ffffff;
+}
+
+/* create normalize */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+button{
+    cursor: pointer;
+}
+
+.container{
+    width: 100%;
+    max-width: 1340px;
+    margin-inline: auto;
+}
+
+/* create header */
+
+header{
+    background-color: var(--titleColor);
+    padding-block: 10px;
+    border-radius: 20px;
+}
+
+.header__menu{
+    display: flex;
+    align-items: center;
+    gap: 90px;
+    margin-left: 640px;
+}
+nav{
+    display: flex;
+    gap: 50px;
+}
+
+nav a{
+    font-family: var(--textFond);
+    color: var(--menuColor);
+    font-size: 17px;
+    line-height: 20px;
+    font-weight: 600;
+} 
+nav a:hover{
+    text-decoration: underline;
+}
+.header__btn{
+    width: 170px;
+    height: 40px;
+    background-color: var(--menuColor);
+    border-radius: 50px;
+    border: none;
+
+    font-family: var(--textFond);
+    color: var(--titleColor);
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 600;
+}
+.header__btn:hover{
+    background-color: transparent;
+    border: 2px solid var(--menuColor);
+    color: var(--menuColor);
+}
+
+/* create using */
+
+.using h1{
+    font-family: var(--textFond);
+    color: var(--titleColor);
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 600;
+    padding-top: 100px;
+}
+
+.using__img{
+    display: flex;
+    gap: 50px;    
+}
+
+.using__cards img{
+    width: 70px;
+    height: 70px;
+}
+.using__cards p{
+    font-family: var(--textFond);
+    color: var(--titleColor);
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 400;
+}
