@@ -334,7 +334,13 @@ footer{
     color: var(--titleColor);
     text-decoration: underline;
 }
-
+.footer__img a img{
+    transition: transform 0.3s;
+}
+.footer__img a img:hover{
+    transform: scale(1.2);
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.6);
+}
 .footer__contact{
     margin-top: 60px;
     margin-left: 150px;
